@@ -23,7 +23,12 @@ export default function Preloader() {
         <div className="relative w-32 h-32">
           <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-6xl font-black text-primary animate-bounce">BA</div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F6e5ab5c2e0cd43ecb67a81073a8db740?format=webp&width=800"
+              alt="Big Al's Debris logo"
+              className="w-24 h-24 object-contain animate-bounce"
+              loading="eager"
+            />
           </div>
           {/* Rotating Border */}
           <div className="absolute inset-0 border-4 border-transparent border-t-primary border-r-primary rounded-full animate-spin"></div>

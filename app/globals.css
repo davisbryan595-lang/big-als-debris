@@ -210,3 +210,70 @@ html {
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
 }
+
+/* Nav logo sizing, float and hover effects */
+.nav-logo-large {
+  width: 96px; /* wider */
+  height: 56px;
+}
+
+@media (min-width: 768px) {
+  .nav-logo-large {
+    width: 120px;
+    height: 64px;
+  }
+}
+
+.nav-logo-float {
+  animation: logoFloat 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.nav-logo-float:hover {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Particle background applied to all sections except hero */
+section:not(.hero-section) {
+  position: relative;
+  overflow: hidden;
+}
+
+section:not(.hero-section)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(0,255,0,0.18) 0 3px, transparent 4px),
+    radial-gradient(circle at 80% 40%, rgba(0,255,0,0.14) 0 4px, transparent 6px),
+    radial-gradient(circle at 40% 80%, rgba(0,255,0,0.10) 0 2px, transparent 4px),
+    radial-gradient(circle at 90% 10%, rgba(0,255,0,0.08) 0 2px, transparent 4px);
+  background-size: 200% 200%;
+  animation: particlesMove 24s linear infinite, particlesPulse 8s ease-in-out infinite;
+}
+
+/* Ensure section content stacks above particles */
+section:not(.hero-section) > * {
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes particlesMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+@keyframes particlesPulse {
+  0%,100% { opacity: 0.10; }
+  50% { opacity: 0.22; }
+}

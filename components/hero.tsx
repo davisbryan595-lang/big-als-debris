@@ -16,9 +16,10 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-      <video ref={videoRef} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-        <source src="/videos/junk-removal-hero.mp4" type="video/mp4" />
+    <section className="hero-section relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      <video ref={videoRef} autoPlay muted loop playsInline poster="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F6e5ab5c2e0cd43ecb67a81073a8db740?format=webp&width=1600" preload="auto" className="absolute inset-0 w-full h-full object-cover">
+        <source src="https://videos.pexels.com/video-files/5434275/5434275-hd_1280_720_24fps.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
 
       {/* Dark Overlay for Text Readability */}
