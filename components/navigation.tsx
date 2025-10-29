@@ -9,6 +9,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "#services", label: "Services" },
+    { href: "#gallery", label: "Our Work" },
     { href: "#about", label: "About" },
     { href: "#areas", label: "Areas Served" },
     { href: "#contact", label: "Contact" },
@@ -20,7 +21,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:glow-primary-hover transition-all overflow-hidden">
+            <div className="w-16 h-16 flex items-center justify-center group-hover:glow-primary-hover transition-all overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F37fe508629794307b44d873859aad7cf%2F6e5ab5c2e0cd43ecb67a81073a8db740?format=webp&width=800"
                 alt="Big Al's Debris logo"
@@ -29,7 +30,6 @@ export default function Navigation() {
                 fetchPriority="high"
               />
             </div>
-            <span className="font-bold text-lg text-text hidden sm:inline">Big Al's</span>
           </Link>
 
           {/* Desktop Navigation */}
