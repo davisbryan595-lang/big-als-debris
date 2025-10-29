@@ -37,13 +37,16 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 sm:py-32 bg-surface relative overflow-hidden">
+    <section
+      id="services"
+      className="py-10 sm:py-16 bg-surface relative overflow-hidden pt-[80px]"
+    >
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl sm:text-5xl font-black text-text mb-4">
             What We <span className="text-primary">Offer</span>
           </h2>
