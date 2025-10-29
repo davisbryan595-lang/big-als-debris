@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       <video ref={videoRef} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-        <source src="/videos/junk-removal-hero.mp4" type="video/mp4" />
+        <source src="https://videos.pexels.com/video-files/2109463/2109463-hd_1280_720_60fps.mp4" type="video/mp4" />
       </video>
 
       {/* Dark Overlay for Text Readability */}
