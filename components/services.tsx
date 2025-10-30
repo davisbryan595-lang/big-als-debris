@@ -45,7 +45,7 @@ export default function Services() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl sm:text-5xl font-black text-text mb-4">
             What We <span className="text-primary">Offer</span>
@@ -55,13 +55,13 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <div
                 key={index}
-                className="group p-8 bg-background/50 backdrop-blur border border-border rounded-xl hover:border-primary transition-all duration-300 hover:glow-primary-hover hover:scale-105 cursor-pointer flex flex-col h-full justify-between w-full max-w-[360px]"
+                className="group p-8 bg-background/50 backdrop-blur border border-border rounded-xl hover:border-primary transition-all duration-300 hover:glow-primary-hover hover:scale-105 cursor-pointer flex flex-col h-full justify-between w-full"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="mb-4 inline-block p-3 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
