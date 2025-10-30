@@ -153,6 +153,11 @@ html {
   scroll-padding-top: 4rem; /* offset for fixed navigation */
 }
 
+/* Ensure anchored sections align below the fixed navigation */
+section {
+  scroll-margin-top: 4rem;
+}
+
 /* Updated glow effects to use bright green from logo */
 .glow-primary {
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
