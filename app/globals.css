@@ -268,6 +268,12 @@ section:not(.hero-section) > * {
   z-index: 10;
 }
 
+/* Offset anchor targets so fixed nav doesn't create a visible gap */
+#services {
+  scroll-margin-top: 4rem; /* matches nav height */
+  margin-top: 0;
+}
+
 @keyframes particlesMove {
   0% { background-position: 0% 0%; }
   50% { background-position: 100% 100%; }
