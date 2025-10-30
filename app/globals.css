@@ -150,6 +150,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* offset for fixed navigation */
+}
+
+/* Ensure anchored sections align below the fixed navigation */
+section {
+  scroll-margin-top: 4rem;
 }
 
 /* Updated glow effects to use bright green from logo */
@@ -265,6 +271,12 @@ section:not(.hero-section)::before {
 section:not(.hero-section) > * {
   position: relative;
   z-index: 10;
+}
+
+/* Offset anchor targets so fixed nav doesn't create a visible gap */
+#services {
+  scroll-margin-top: 4rem; /* matches nav height */
+  margin-top: 0;
 }
 
 @keyframes particlesMove {
