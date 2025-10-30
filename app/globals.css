@@ -150,6 +150,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* offset for fixed navigation */
 }
 
 /* Updated glow effects to use bright green from logo */
