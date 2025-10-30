@@ -39,14 +39,14 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-surface relative overflow-hidden"
+      className="py-16 pt-[80px] px-4 sm:px-6 lg:px-8 bg-surface relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in-up">
+        <div className="text-center mb-8 animate-fade-in-up">
           <h2 className="text-4xl sm:text-5xl font-black text-text mb-4">
             What We <span className="text-primary">Offer</span>
           </h2>
@@ -55,19 +55,19 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <div
                 key={index}
-                className="group p-8 bg-background/50 backdrop-blur border border-border rounded-xl hover:border-primary transition-all duration-300 hover:glow-primary-hover hover:scale-105 cursor-pointer flex flex-col h-full justify-between w-full"
+                className="group p-6 bg-background/50 backdrop-blur border border-border rounded-xl hover:border-primary transition-all duration-300 hover:glow-primary-hover hover:scale-105 cursor-pointer flex flex-col h-full justify-between w-full"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="mb-4 inline-block p-3 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
+                <div className="mb-2 inline-block p-3 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
                   <Icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-text mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold text-text mb-2 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-text-muted leading-relaxed">{service.description}</p>
