@@ -39,7 +39,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-10 sm:py-16 bg-surface relative overflow-hidden pt-[80px]"
+      className="py-10 sm:py-16 bg-surface relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
