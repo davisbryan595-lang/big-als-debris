@@ -42,8 +42,7 @@ export default function Services() {
       className="py-12 pt-[80px] px-4 sm:px-6 lg:px-8 bg-surface relative overflow-hidden"
     >
       {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center animate-fade-in-up">
